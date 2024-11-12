@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acción - CuevanaPelis</title>
+    <link rel="stylesheet" href="categorias.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="imagenes/icono.png" type="image/png" sizes="32x32">
+</head>
+<body>
+    <!-- Marco superior -->
+    <header class="marco-superior">
+        <div class="logo">CuevanaPelis</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li class="categorias">
+                    Categorías
+                    <ul class="submenu">
+                        <li><a href="terror.html">Terror</a></li>
+                        <li><a href="comedia.html">Comedias</a></li>
+                        <li><a href="accion.html">Acción</a></li>
+                        <li><a href="suspenso.html">Suspenso</a></li>
+                        <li><a href="animado.html">Animado</a></li>
+                        <li><a href="drama.html">Drama</a></li>
+                    </ul>
+                </li>
+                <li><a href="lanzamientos.html">Próximos lanzamientos</a></li>
+            </ul>
+        </nav>
+        <div class="busqueda">
+            <input type="text" id="searchInput" placeholder="Escribe el nombre de la película...">
+            <button onclick="buscar()">Buscar</button>
+            <div id="resultados" class="dropdown-menu"></div>
+        </div>
+        
+          <script src="buscar.js"></script>
+        </header>
+
+
+<main class="marco-inferior">
+    <div class="titulo">
+        <h2>Películas Animadas</h2>
+    </div>
+    <div class="peliculas-recientes">
+        <!-- Fila 1 -->
+        <div class="fila">
+            <div class="pelicula">
+                <a href="ToyStory4.html">
+                    <img src="imagenes/toystory4.jpg" alt="Toy Story 4">
+                    <h3>Toy Story 4</h3>
+                </a>
+            </div>
+            <div class="pelicula">
+                <a href="SpiderManIntoTheSpiderVerse.html">
+                    <img src="imagenes/spidermanintothespiderverse.jpg" alt="Spider-Man: Into the Spider-Verse">
+                    <h3>Spider-Man: Into the Spider-Verse</h3>
+                </a>
+            </div>
+            <div class="pelicula">
+                <a href="Frozen2.html">
+                    <img src="imagenes/frozen2.jpg" alt="Frozen 2">
+                    <h3>Frozen 2</h3>
+                </a>
+            </div>
+            <div class="pelicula">
+                <a href="Zootopia.html">
+                    <img src="imagenes/zootopia.jpg" alt="Zootopia">
+                    <h3>Zootopia</h3>
+                </a>
+            </div>
+            <div class="pelicula">
+                <a href="Coco.html">
+                    <img src="imagenes/coco.jpg" alt="Coco">
+                    <h3>Coco</h3>
+                </a>
+            </div>
+        </div>
+
+        <!-- Fila 2 -->
+        <div class="fila">
+            <div class="pelicula">
+                <a href="ShrekForeverAfter.html">
+                    <img src="imagenes/shrekforeverafter.jpg" alt="Shrek Forever After">
+                    <h3>Shrek Forever After</h3>
+                </a>
+            </div>
+            <div class="pelicula">
+                <a href="InsideOut.html">
+                    <img src="imagenes/insideout.jpg" alt="Inside Out">
+                    <h3>Inside Out</h3>
+                </a>
+            </div>
+            <div class="pelicula">
+                <a href="BigHero6.html">
+                    <img src="imagenes/bighero6.jpg" alt="Big Hero 6">
+                    <h3>Big Hero 6</h3>
+                </a>
+            </div>
+            <div class="pelicula">
+                <a href="TheIncredibles2.html">
+                    <img src="imagenes/theincredibles2.jpg" alt="The Incredibles 2">
+                    <h3>The Incredibles 2</h3>
+                </a>
+            </div>
+            <div class="pelicula">
+                <a href="Minions.html">
+                    <img src="imagenes/minions.jpg" alt="Minions">
+                    <h3>Minions</h3>
+                </a>
+            </div>
+        </div>
+
+        <!-- Fila 3 -->
+        <div class="fila">
+            <div class="pelicula">
+                <a href="Moana.html">
+                    <img src="imagenes/moana.jpg" alt="Moana">
+                    <h3>Moana</h3>
+                </a>
+            </div>
+            <div class="pelicula">
+                <a href="Cars3.html">
+                    <img src="imagenes/cars3.jpg" alt="Cars 3">
+                    <h3>Cars 3</h3>
+                </a>
+            </div>
+            <div class="pelicula">
+                <a href="RalphBreaksTheInternet.html">
+                    <img src="imagenes/ralphbreakstheinternet.jpg" alt="Ralph Breaks the Internet">
+                    <h3>Ralph Breaks the Internet</h3>
+                </a>
+            </div>
+            <div class="pelicula">
+                <a href="Klaus.html">
+                    <img src="imagenes/klaus.jpg" alt="Klaus">
+                    <h3>Klaus</h3>
+                </a>
+            </div>
+            <div class="pelicula">
+                <a href="KungFuPanda3.html">
+                    <img src="imagenes/kungfupanda3.jpg" alt="Kung Fu Panda 3">
+                    <h3>Kung Fu Panda 3</h3>
+                </a>
+            </div>
+        </div>
+    </div>
+</main>
+
+    <!-- Pie de página -->
+    <div class="footerContainer">
+        <p class="footerText">
+            Derechos reservados a sus autores. | <a href="terminos.html" target="_blank">Términos de uso</a> | <a href="privacidad.html" target="_blank">Política de privacidad</a>
+        </p>
+    </div>
+
+    <!-- Estilos CSS para el pie de página -->
+    <style>
+        .footerContainer {
+            background-color: #1a1919; 
+            padding: 20px; 
+            text-align: center; 
+            border-top: 2px solid #ccc;
+        }
+        .footerText {
+            font-size: 14px; 
+            color: #fcfafa;
+            margin: 0;
+        }
+        .footerText a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .footerText a:hover {
+            text-decoration: underline;
+        }
+    </style>
+
+</body>
+</html>
+

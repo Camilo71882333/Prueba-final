@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acción - CuevanaPelis</title>
+    <link rel="stylesheet" href="categorias.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="imagenes/icono.png" type="image/png" sizes="32x32">
+</head>
+<body>
+    <!-- Marco superior -->
+    <header class="marco-superior">
+        <div class="logo">CuevanaPelis</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li class="categorias">
+                    Categorías
+                    <ul class="submenu">
+                        <li><a href="terror.html">Terror</a></li>
+                        <li><a href="comedia.html">Comedias</a></li>
+                        <li><a href="accion.html">Acción</a></li>
+                        <li><a href="suspenso.html">Suspenso</a></li>
+                        <li><a href="animado.html">Animado</a></li>
+                        <li><a href="drama.html">Drama</a></li>
+                    </ul>
+                </li>
+                <li><a href="lanzamientos.html">Próximos lanzamientos</a></li>
+            </ul>
+        </nav>
+        <div class="busqueda">
+            <input type="text" id="searchInput" placeholder="Escribe el nombre de la película...">
+            <button onclick="buscar()">Buscar</button>
+            <div id="resultados" class="dropdown-menu"></div>
+        </div>
+        
+          <script src="buscar.js"></script>
+        </header>
+
+    <!-- Contenido de la página de Acción -->
+    <main class="marco-inferior">
+        <div class="titulo">
+            <h2>Películas de Acción</h2>
+        </div>
+        <div class="peliculas-recientes">
+            <!-- Fila 1 -->
+            <div class="fila">
+                <div class="pelicula">
+                    <a href="MadMaxFuryRoad.html">
+                        <img src="imagenes/madmaxfuryroad.jpg" alt="Mad Max: Fury Road">
+                        <h3>Mad Max: Fury Road</h3>
+                    </a>
+                </div>
+                <div class="pelicula">
+                    <a href="JohnWick.html">
+                        <img src="imagenes/johnwick.jpg" alt="John Wick">
+                        <h3>John Wick</h3>
+                    </a>
+                </div>
+                <div class="pelicula">
+                    <a href="Gladiator.html">
+                        <img src="imagenes/gladiator.jpg" alt="Gladiator">
+                        <h3>Gladiator</h3>
+                    </a>
+                </div>
+                <div class="pelicula">
+                    <a href="TheDarkKnight.html">
+                        <img src="imagenes/thedarkknight.jpg" alt="The Dark Knight">
+                        <h3>The Dark Knight</h3>
+                    </a>
+                </div>
+                <div class="pelicula">
+                    <a href="AvengersEndgame.html">
+                        <img src="imagenes/avengersendgame.jpg" alt="Avengers: Endgame">
+                        <h3>Avengers: Endgame</h3>
+                    </a>
+                </div>
+            </div>
+    
+            <!-- Fila 2 -->
+            <div class="fila">
+                <div class="pelicula">
+                    <a href="MissionImpossibleFallout.html">
+                        <img src="imagenes/missionimpossiblefallout.jpg" alt="Mission Impossible: Fallout">
+                        <h3>Mission Impossible: Fallout</h3>
+                    </a>
+                </div>
+                <div class="pelicula">
+                    <a href="DieHard.html">
+                        <img src="imagenes/diehard.jpg" alt="Die Hard">
+                        <h3>Die Hard</h3>
+                    </a>
+                </div>
+                <div class="pelicula">
+                    <a href="Terminator2.html">
+                        <img src="imagenes/terminator2.jpg" alt="Terminator 2">
+                        <h3>Terminator 2</h3>
+                    </a>
+                </div>
+                <div class="pelicula">
+                    <a href="TheMatrix.html">
+                        <img src="imagenes/thematrix.jpg" alt="The Matrix">
+                        <h3>The Matrix</h3>
+                    </a>
+                </div>
+                <div class="pelicula">
+                    <a href="Deadpool.html">
+                        <img src="imagenes/deadpool.jpg" alt="Deadpool">
+                        <h3>Deadpool</h3>
+                    </a>
+                </div>
+            </div>
+    
+            <!-- Fila 3 -->
+            <div class="fila">
+                <div class="pelicula">
+                    <a href="TheRaid.html">
+                        <img src="imagenes/theraid.jpg" alt="The Raid">
+                        <h3>The Raid</h3>
+                    </a>
+                </div>
+                <div class="pelicula">
+                    <a href="SpiderManNoWayHome.html">
+                        <img src="imagenes/spidermannowayhome.jpg" alt="Spider-Man: No Way Home">
+                        <h3>Spider-Man: No Way Home</h3>
+                    </a>
+                </div>
+                <div class="pelicula">
+                    <a href="TheEqualizer.html">
+                        <img src="imagenes/theequalizer.jpg" alt="The Equalizer">
+                        <h3>The Equalizer</h3>
+                    </a>
+                </div>
+                <div class="pelicula">
+                    <a href="TheTransporter.html">
+                        <img src="imagenes/thetransporter.jpg" alt="The Transporter">
+                        <h3>The Transporter</h3>
+                    </a>
+                </div>
+                <div class="pelicula">
+                    <a href="RamboFirstBlood.html">
+                        <img src="imagenes/rambo.jpg" alt="Rambo: First Blood">
+                        <h3>Rambo: First Blood</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    
+
+    <!-- Pie de página -->
+    <div class="footerContainer">
+        <p class="footerText">
+            Derechos reservados a sus autores. | <a href="terminos.html" target="_blank">Términos de uso</a> | <a href="privacidad.html" target="_blank">Política de privacidad</a>
+        </p>
+    </div>
+
+    <!-- Estilos CSS para el pie de página -->
+    <style>
+        .footerContainer {
+            background-color: #1a1919; 
+            padding: 20px; 
+            text-align: center; 
+            border-top: 2px solid #ccc;
+        }
+        .footerText {
+            font-size: 14px; 
+            color: #fcfafa;
+            margin: 0;
+        }
+        .footerText a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .footerText a:hover {
+            text-decoration: underline;
+        }
+    </style>
+
+</body>
+</html>

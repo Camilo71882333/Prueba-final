@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CuevanaPelis</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="imagenes/icono.png" type="image/png" sizes="32x32">
+    
+</head>
+<body>
+
+    <!-- Marco superior -->
+    <header class="marco-superior">
+        <div class="logo">CuevanaPelis</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li class="categorias">
+                    Categorías
+                    <ul class="submenu">
+                        <li><a href="terror.html">Terror</a></li>
+                        <li><a href="comedia.html">Comedias</a></li>
+                        <li><a href="accion.html">Acción</a></li>
+                        <li><a href="suspenso.html">Suspenso</a></li>
+                        <li><a href="animado.html">Animado</a></li>
+                        <li><a href="drama.html">Drama</a></li>
+                    </ul>
+                </li>
+                <li><a href="lanzamientos.html">Próximos lanzamientos</a></li>
+            </ul>
+        </nav>
+        
+        
+        <div class="busqueda">
+            <input type="text" id="searchInput" placeholder="Escribe el nombre de la película...">
+            <button onclick="buscar()">Buscar</button>
+            <div id="resultados" class="dropdown-menu"></div>
+        </div>
+      </header>
+        
+          <script src="buscar.js"></script>
+        </header>
+
+    <!-- Marco inferior -->
+    <main class="marco-inferior">
+        <h2>Últimas Películas Publicadas</h2>
+        <div class="peliculas-recientes">
+            <!-- Película 1 -->
+            <div class="pelicula">
+                <!-- Imagen de la película con enlace -->
+                <a href="Venom3.html">
+                  <img src="imagenes/Venom3.png" alt="Aquaman 2">
+               
+                
+                <!-- Nombre de la película con enlace -->
+                  <h3>Venom 3 The Last Dance</h3>
+                </a>
+              </div>
+              
+        
+            <!-- Película 2 -->
+            <div class="pelicula">
+            <a href="LosGuardianes.html">
+                <img src="imagenes/el origen de los guardianes.png" alt="El origen de los guardianes">
+                <h3> El Origen de los guardianes </h3>
+            </a>
+            </div>
+        
+            <!-- Película 3 -->
+            <div class="pelicula">
+                <a href="HocusPocus2.html">
+                <img src="imagenes/Hocus Pocus 2.png" alt="Hocus Pocus 2">
+                <h3>Hocus Pocus 2</h3>
+            </a>
+
+            
+            </div>
+        
+            <!-- Película 4 -->
+            <div class="pelicula">
+                <a href="Ligadejusticia.html">
+                <img src="imagenes/Liga de la justicia.png" alt="Liga de la Justicia">
+                <h3>Liga de la Justicia - Zack Snyders</h3>
+            </a>
+            </div>
+        
+            <!-- Película 5 -->
+            <div class="pelicula">
+                <a href="Mulan.html">
+                <img src="imagenes/Mulan.png" alt="Mulan">
+                <h3>Mulan LIve Action</h3>
+            </a>
+            </div>
+        
+            <!-- Película 6 -->
+            <div class="pelicula">
+                <a href="RobotSalvaje.html">
+                <img src="imagenes/Robot Salvaje.png" alt="Robot Salvaje">
+                <h3>Robot Salvaje</h3>
+            </a>
+            </div>
+        </div>
+        
+    </main>
+
+
+    <div class="card">
+        <!-- Ícono de Facebook -->
+        <a class="socialContainer containerOne" href="https://www.facebook.com/tuPagina" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="socialSvg facebookSvg">
+                <path d="M22.675 0h-21.35C.595 0 0 .594 0 1.325v21.35C0 23.405.595 24 1.325 24h11.495v-9.293h-3.12v-3.622h3.12V9.411c0-3.078 1.79-4.779 4.574-4.779 1.324 0 2.693.098 3.031.14v3.527h-1.72c-1.345 0-1.691.635-1.691 1.63v2.133h3.386l-.438 3.622h-2.948V24h5.774c.73 0 1.325-.595 1.325-1.325V1.325c0-.73-.595-1.325-1.325-1.325z"/>
+            </svg>
+        </a>
+        <!-- Ícono de X (anteriormente Twitter) -->
+        <a class="socialContainer containerTwo" href="https://x.com/tuPagina" target="_blank">
+            <svg viewBox="0 0 16 16" class="socialSvg xSvg">
+                <path
+                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
+                ></path>
+            </svg>
+        </a>
+        <!-- Incluir Font Awesome para los iconos -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+<!-- Botón con estilo y el ícono de Google Maps -->
+<button class="boton-ubicacion" onclick="window.location.href='https://maps.app.goo.gl/RruubN6vHYhRazms6';">
+    <i class="fas fa-map-marker-alt"></i> Ver Ubicación
+</button>
+
+<!-- Estilos CSS -->
+<style>
+    .boton-ubicacion {
+        background-color: #4285F4; /* Color de fondo de Google Maps */
+        color: white;
+        font-size: 16px;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        transition: background-color 0.3s ease;
+    }
+
+    .boton-ubicacion:hover {
+        background-color: #34a853; /* Cambio de color cuando el mouse pasa por encima */
+    }
+
+    .boton-ubicacion i {
+        font-size: 20px;
+    }
+</style>
+
+
+
+
+    </div>
+    
+    <!-- Contenedor para el pie de página -->
+    <div class="footerContainer">
+        <p class="footerText">
+            Derechos reservados a sus autores. | <a href="terminos.html" target="_blank">Términos de uso</a> | <a href="privacidad.html" target="_blank">Política de privacidad</a>
+        </p>
+    </div>
+    
+    <!-- Estilos CSS para el pie de página -->
+    <style>
+        .footerContainer {
+            background-color: #1a1919; /* Fondo gris claro */
+            padding: 20px; /* Espaciado interior */
+            text-align: center; /* Centrar el texto */
+            border-top: 2px solid #ccc; /* Línea superior sutil */
+        }
+        .footerText {
+            font-size: 14px; /* Tamaño de fuente pequeño */
+            color: #fcfafa; /* Color gris oscuro */
+            margin: 0; /* Eliminar márgenes */
+        }
+        .footerText a {
+            color: #007bff; /* Color azul para los enlaces */
+            text-decoration: none; /* Eliminar subrayado */
+        }
+        .footerText a:hover {
+            text-decoration: underline; /* Subrayado al pasar el ratón */
+        }
+    </style>
+    <div id="cookie-banner" style="position: fixed; bottom: 0; width: 100%; background-color: #333; color: white; padding: 10px; text-align: center; display: none;">
+        <p>Este sitio web utiliza cookies para mejorar tu experiencia. Al continuar navegando, aceptas el uso de cookies. <a href="politica-de-privacidad.html" style="color: #fff;">Más información</a>.</p>
+        <button id="accept-cookies" style="background-color: #ff6600; border: none; color: white; padding: 10px 20px; cursor: pointer;">Aceptar</button>
+      </div>
+      
+      <script>
+        // Mostrar el banner si aún no se ha aceptado el uso de cookies
+        if (!localStorage.getItem('cookiesAccepted')) {
+          document.getElementById('cookie-banner').style.display = 'block';
+        }
+      
+        // Acción al hacer clic en "Aceptar"
+        document.getElementById('accept-cookies').addEventListener('click', function() {
+          localStorage.setItem('cookiesAccepted', 'true');
+          document.getElementById('cookie-banner').style.display = 'none';
+        });
+      </script>
+      
+    
+</body>
+</html>

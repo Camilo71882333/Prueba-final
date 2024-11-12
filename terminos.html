@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Términos y Condiciones</title>
+  <style>
+    /* Estilos generales */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    /* Marco superior (cabecera) */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #333;
+      padding: 10px;
+      color: #fff;
+    }
+
+    header .logo {
+      font-size: 1.5em;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .categorias:hover .submenu {
+      display: block;
+    }
+
+    .submenu {
+      display: none;
+      position: absolute;
+      background-color: #444;
+      padding: 10px;
+      list-style: none;
+    }
+
+    .submenu li {
+      margin: 5px 0;
+    }
+
+    .busqueda {
+      display: flex;
+    }
+
+    .busqueda input {
+      padding: 5px;
+    }
+
+    /* Estilos para el contenido principal */
+    main {
+      padding: 20px;
+    }
+
+    .contenido-terminos {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .contenido-terminos h1 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .contenido-terminos h2 {
+      font-size: 1.5em;
+      margin-top: 20px;
+      color: #444;
+    }
+
+    .contenido-terminos p {
+      font-size: 1em;
+      line-height: 1.6;
+      margin-top: 10px;
+      color: #555;
+    }
+
+    /* Pie de página */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #333;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Marco superior -->
+<header class="marco-superior">
+  <div class="logo">CuevanaPelis</div>
+  <nav>
+      <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li class="categorias">
+              Categorías
+              <ul class="submenu">
+                  <li><a href="terror.html">Terror</a></li>
+                  <li><a href="comedia.html">Comedias</a></li>
+                  <li><a href="accion.html">Acción</a></li>
+                  <li><a href="suspenso.html">Suspenso</a></li>
+                  <li><a href="animado.html">Animado</a></li>
+                  <li><a href="drama.html">Drama</a></li>
+              </ul>
+          </li>
+          <li><a href="lanzamientos.html">Próximos lanzamientos</a></li>
+      </ul>
+  </nav>
+  
+  
+  <div class="busqueda">
+      <input type="text" id="searchInput" placeholder="Escribe el nombre de la película...">
+      <button onclick="buscar()">Buscar</button>
+      <div id="resultados" class="dropdown-menu"></div>
+  </div>
+</header>
+  
+    <script src="buscar.js"></script>
+  </header>
+
+  <!-- Contenido principal -->
+  <main>
+    <div class="contenido-terminos">
+      <h1>Términos y Condiciones</h1>
+      <p><strong>Bienvenido a CuevanaPelis</strong></p>
+      <p>Estos son los términos y condiciones que rigen el uso de nuestro sitio web. Al acceder o utilizar este sitio web, aceptas cumplir con estos términos.</p>
+
+      <h2>1. Aceptación de los Términos</h2>
+      <p>Al acceder a nuestro sitio web, aceptas los términos y condiciones establecidos. Si no estás de acuerdo con estos términos, te recomendamos no usar este sitio.</p>
+
+      <h2>2. Uso del Sitio Web</h2>
+      <p>Este sitio se proporciona solo para fines informativos y de entretenimiento. No se permite el uso de este sitio para actividades ilegales.</p>
+
+      <h2>3. Propiedad Intelectual</h2>
+      <p>Todo el contenido, incluidos los videos, imágenes, textos y logotipos, está protegido por derechos de autor y otras leyes de propiedad intelectual.</p>
+
+      <h2>4. Limitación de Responsabilidad</h2>
+      <p>El uso de este sitio web es bajo tu propio riesgo. No nos hacemos responsables por cualquier daño o pérdida derivada del uso de este sitio.</p>
+
+      <h2>5. Cambios en los Términos</h2>
+      <p>Nos reservamos el derecho de modificar estos términos en cualquier momento. Las modificaciones se publicarán en esta página y serán efectivas inmediatamente después de su publicación.</p>
+
+      <h2>6. Contacto</h2>
+      <p>Si tienes preguntas sobre estos términos, puedes contactarnos a través de nuestra página de contacto.</p>
+    </div>
+  </main>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>&copy; Derechos reservados a CuevanaPelis</p>
+  </footer>
+
+</body>
+</html>

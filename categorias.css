@@ -1,0 +1,30 @@
+.peliculas-recientes {
+  display: flex;
+  flex-direction: column;
+  gap: 30px; /* Espacio entre las filas */
+}
+
+.fila {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pelicula {
+  width: 18%; /* Cada película ocupará el 18% del ancho de la fila */
+  box-sizing: border-box;
+}
+
+.pelicula img {
+  width: 100%;
+  height: auto;
+}
+
+.pelicula h3 {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.titulo {
+  text-align: center;
+  padding: 20px 20px 20px;
+}

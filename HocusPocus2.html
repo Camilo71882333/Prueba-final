@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hocus Pocus 2</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Asegúrate de tener el archivo CSS -->
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<!-- Marco superior -->
+<header class="marco-superior">
+  <div class="logo">CuevanaPelis</div>
+  <nav>
+      <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li class="categorias">
+              Categorías
+              <ul class="submenu">
+                  <li><a href="terror.html">Terror</a></li>
+                  <li><a href="comedia.html">Comedias</a></li>
+                  <li><a href="accion.html">Acción</a></li>
+                  <li><a href="suspenso.html">Suspenso</a></li>
+                  <li><a href="animado.html">Animado</a></li>
+                  <li><a href="drama.html">Drama</a></li>
+              </ul>
+          </li>
+          <li><a href="lanzamientos.html">Próximos lanzamientos</a></li>
+      </ul>
+  </nav>
+  
+  
+  <div class="busqueda">
+      <input type="text" id="searchInput" placeholder="Escribe el nombre de la película...">
+      <button onclick="buscar()">Buscar</button>
+      <div id="resultados" class="dropdown-menu"></div>
+  </div>
+</header>
+  
+    <script src="buscar.js"></script>
+  </header>
+  
+    <script src="buscar.js"></script>
+  </header>
+
+  <main>
+    <div class="pelicula-container">
+      <div class="pelicula-imagen">
+        <img src="imagenes/Hocus Pocus 2.png" alt="Venom 3">
+      </div>
+      <div class="pelicula-sinopsis">
+        <h1>Hocus Pocus 2</h1>
+        <p><strong>Sinopsis:</strong> Han pasado 29 años desde que las hermanas Sanderson fueron resucitadas accidentalmente, y la magia de Halloween vuelve a cobrar vida. Tres adolescentes de Salem, Becca, Izzy y Cassie, desatan sin querer a las famosas brujas para una nueva amenaza en la ciudad. Esta vez, las hermanas Sanderson tienen un plan aún más oscuro para robar la juventud de los jóvenes. Mientras las tres chicas luchan por detenerlas, descubrirán el verdadero poder de la amistad y la valentía. Con risas, hechizos y travesuras, Hocus Pocus 2 trae una mezcla de nostalgia y magia que encantará a nuevas y viejas generaciones.
+
+        </p>
+        <p><strong>Calificación:</strong> 8.5/10</p>
+      </div>
+    </div>
+
+    <!-- Contenedor de video -->
+    <div class="video-container">
+      <h2>Ver Película</h2>
+      <div class="video">
+        <!-- Configuración para carga progresiva y reproducción mientras se carga -->
+        <video width="560" height="315" controls preload="auto" poster="imagenes/PosterHocusPocus2Video.png">
+          <source src="Peliculas/Hocus Pocus 2.mp4" type="video/mp4">
+          Tu navegador no soporta la reproducción de video.
+        </video>
+      </div>
+    </div>
+  </main>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>&copy; Derechos reservados a sus autores</p>
+  </footer>
+</body>
+</html>

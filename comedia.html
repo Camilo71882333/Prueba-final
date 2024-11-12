@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comedias - CuevanaPelis</title>
+    <link rel="stylesheet" href="categorias.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="imagenes/icono.png" type="image/png" sizes="32x32">
+</head>
+<body>
+ <!-- Marco superior -->
+ <header class="marco-superior">
+    <div class="logo">CuevanaPelis</div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li class="categorias">
+                Categorías
+                <ul class="submenu">
+                    <li><a href="terror.html">Terror</a></li>
+                    <li><a href="comedia.html">Comedias</a></li>
+                    <li><a href="accion.html">Acción</a></li>
+                    <li><a href="suspenso.html">Suspenso</a></li>
+                    <li><a href="animado.html">Animado</a></li>
+                    <li><a href="drama.html">Drama</a></li>
+                </ul>
+            </li>
+            <li><a href="lanzamientos.html">Próximos lanzamientos</a></li>
+        </ul>
+    </nav>
+    
+    
+    <div class="busqueda">
+        <input type="text" id="searchInput" placeholder="Escribe el nombre de la película...">
+        <button onclick="buscar()">Buscar</button>
+        <div id="resultados" class="dropdown-menu"></div>
+    </div>
+    
+      <script src="buscar.js"></script>
+    </header>
+
+    <!-- Marco inferior -->
+    <main class="marco-inferior">
+        <div class="titulo">
+            <h2>Películas de Comedia</h2>
+        </div>
+        <div class="peliculas-recientes">
+            <div class="fila">
+                <div class="pelicula">
+                    <a href="Superbad.html">
+                        <img src="imagenes/superbad.jpg" alt="Superbad">
+                        <h3>Superbad</h3>
+                    </a>
+                </div>
+                <div class="pelicula">
+                    <a href="DumbAndDumber.html">
+                        <img src="imagenes/dumb_and_dumber.jpg" alt="Dumb and Dumber">
+                        <h3>Dumb and Dumber</h3>
+                    </a>
+                </div>
+                <div class="pelicula">
+                    <a href="TheMask.html">
+                        <img src="imagenes/the_mask.jpg" alt="The Mask">
+                        <h3>The Mask</h3>
+                    </a>
+                </div>
+                <div class="pelicula">
+                    <a href="StepBrothers.html">
+                        <img src="imagenes/daaaaali.jpg" alt="Step Brothers">
+                        <h3>Daaaaaalí!</h3>
+                    </a>
+                </div>
+                <div class="pelicula">
+                    <a href="StepBrothers.html">
+                        <img src="imagenes/PobresCriaturas.jpg" alt="Step Brothers">
+                        <h3>Pobres criaturas</h3>
+                    </a>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="pelicula">
+                    <a href="TheHangover.html">
+                        <img src="imagenes/the_hangover.jpg" alt="The Hangover">
+                        <h3>The Hangover</h3>
+                    </a>
+                </div>
+                <div class="pelicula">
+                    <a href="Bridesmaids.html">
+                        <img src="imagenes/bridesmaids.jpg" alt="Bridesmaids">
+                        <h3>Bridesmaids</h3>
+                    </a>
+                </div>
+                <div class="pelicula">
+                    <a href="Anchorman.html">
+                        <img src="imagenes/anchorman.jpg" alt="Anchorman">
+                        <h3>Anchorman</h3>
+                    </a>
+                </div>
+                <div class="pelicula">
+                    <a href="StepBrothers.html">
+                        <img src="imagenes/El especialista.jpg" alt="Step Brothers">
+                        <h3>El especialista</h3>
+                    </a>
+                </div>
+                <div class="pelicula">
+                    <a href="StepBrothers.html">
+                        <img src="imagenes/pequeñas cartas indiscretas.jpg" alt="Step Brothers">
+                        <h3>Pequeñas cartas indiscretas</h3>
+                    </a>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="pelicula">
+                    <a href="StepBrothers.html">
+                        <img src="imagenes/Chicas malas.jpg" alt="Step Brothers">
+                        <h3>Chicas malas</h3>
+                    </a>
+                </div>
+                <div class="pelicula">
+                    <a href="StepBrothers.html">
+                        <img src="imagenes/Dos chicas a la fuga.jpg" alt="Step Brothers">
+                        <h3>Dos chicas a la fuga</h3>
+                    </a>
+                </div>
+                <div class="pelicula">
+                    <a href="MeanGirls.html">
+                        <img src="imagenes/mean_girls.jpg" alt="Mean Girls">
+                        <h3>Mean Girls</h3>
+                    </a>
+                </div>
+                <div class="pelicula">
+                    <a href="21JumpStreet.html">
+                        <img src="imagenes/21_jump_street.jpg" alt="21 Jump Street">
+                        <h3>21 Jump Street</h3>
+                    </a>
+                </div>
+                <div class="pelicula">
+                    <a href="StepBrothers.html">
+                        <img src="imagenes/step_brothers.jpg" alt="Step Brothers">
+                        <h3>Step Brothers</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Contenedor para el pie de página -->
+    <div class="footerContainer">
+        <p class="footerText">
+            Derechos reservados a sus autores. | <a href="terminos.html" target="_blank">Términos de uso</a> | <a href="privacidad.html" target="_blank">Política de privacidad</a>
+        </p>
+    </div>
+    
+    <!-- Estilos CSS para el pie de página -->
+    <style>
+        .footerContainer {
+            background-color: #1a1919; /* Fondo gris claro */
+            padding: 20px; /* Espaciado interior */
+            text-align: center; /* Centrar el texto */
+            border-top: 2px solid #ccc; /* Línea superior sutil */
+        }
+        .footerText {
+            font-size: 14px; /* Tamaño de fuente pequeño */
+            color: #fcfafa; /* Color gris oscuro */
+            margin: 0; /* Eliminar márgenes */
+        }
+        .footerText a {
+            color: #007bff; /* Color azul para los enlaces */
+            text-decoration: none; /* Eliminar subrayado */
+        }
+        .footerText a:hover {
+            text-decoration: underline; /* Subrayado al pasar el ratón */
+        }
+    </style>
+</body>
+</html>

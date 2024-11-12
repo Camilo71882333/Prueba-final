@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+#resultadosBusqueda {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 columnas */
+    gap: 20px; /* Espacio entre las películas */
+    padding: 20px;
+}
+
+.pelicula {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    transition: transform 0.3s ease;
+}
+
+.pelicula img {
+    width: 200px; /* Ancho fijo para las imágenes */
+    height: 300px; /* Alto fijo para las imágenes */
+    object-fit: cover; /* Asegura que la imagen cubra el espacio sin deformarse */
+    border-radius: 4px;
+}
+
+.pelicula p {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Hover effect */
+.pelicula:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 1200px) {
+    #resultadosBusqueda {
+        grid-template-columns: repeat(4, 1fr); /* 4 columnas en pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 900px) {
+    #resultadosBusqueda {
+        grid-template-columns: repeat(3, 1fr); /* 3 columnas en pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 600px) {
+    #resultadosBusqueda {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas en pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 400px) {
+    #resultadosBusqueda {
+        grid-template-columns: 1fr; /* 1 columna en pantallas más pequeñas */
+    }
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+header .logo {
+    font-size: 1.5em;
+    color: #fff;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    padding: 10px;
+    list-style: none;
+}
+
+.submenu li {
+    margin: 5px 0;
+}
+
+.busqueda {
+    display: flex;
+}
+
+.busqueda input {
+    padding: 5px;
+}
+
+.busqueda button {
+    padding: 8px 15px;
+    background-color: #ff9900;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.busqueda button:hover {
+    background-color: #ff7f00;
+}
+
+/* Cambiar color de texto de categorías a blanco */
+.categorias a {
+    color: white; /* Asegura que el texto sea blanco */
+}
+
+.categorias:hover .submenu {
+    display: block;
+}
+
+.categorias {
+    color: white; /* Asegura que el texto de la categoría también sea blanco */
+}

@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CuevanaPelis</title>
+    <link rel="stylesheet" href="categorias.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="imagenes/icono.png" type="image/png" sizes="32x32">
+    
+</head>
+<body>
+
+ <!-- Marco superior -->
+ <header class="marco-superior">
+    <div class="logo">CuevanaPelis</div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li class="categorias">
+                Categorías
+                <ul class="submenu">
+                    <li><a href="terror.html">Terror</a></li>
+                    <li><a href="comedia.html">Comedias</a></li>
+                    <li><a href="accion.html">Acción</a></li>
+                    <li><a href="suspenso.html">Suspenso</a></li>
+                    <li><a href="animado.html">Animado</a></li>
+                    <li><a href="drama.html">Drama</a></li>
+                </ul>
+            </li>
+            <li><a href="lanzamientos.html">Próximos lanzamientos</a></li>
+        </ul>
+    </nav>
+    
+    
+    <div class="busqueda">
+        <input type="text" id="searchInput" placeholder="Escribe el nombre de la película...">
+        <button onclick="buscar()">Buscar</button>
+        <div id="resultados" class="dropdown-menu"></div>
+    </div>
+    
+      <script src="buscar.js"></script>
+    </header>
+
+    <!-- Marco inferior -->
+    <main class="marco-inferior">
+        <div class="titulo">
+        <h2> Películas de Terror</h2>
+        </div>
+        <div class="peliculas-recientes">
+            <!-- Fila 1 -->
+            <div class="fila">
+                <div class="pelicula">
+                    <a href="ElConjuro.html">
+                        <img src="imagenes/elconjuro.png" alt="El Conjuro">
+                        <h3>El Conjuro</h3>
+                    </a>
+                </div>
+                <div class="pelicula">
+                    <a href="IT.html">
+                        <img src="imagenes/itposter.png" alt="IT">
+                        <h3>IT</h3>
+                    </a>
+                </div>
+                <div class="pelicula">
+                    <a href="Annabelle.html">
+                        <img src="imagenes/anabelle.png" alt="Annabelle">
+                        <h3>Annabelle</h3>
+                    </a>
+                </div>
+                <div class="pelicula">
+                    <a href="Hereditary.html">
+                        <img src="imagenes/hereditary.png" alt="Hereditary">
+                        <h3>Hereditary</h3>
+                    </a>
+                </div>
+                <div class="pelicula">
+                    <a href="LaCosa.html">
+                        <img src="imagenes/la_cosa.jpg" alt="La Cosa">
+                        <h3>La Cosa</h3>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Fila 2 -->
+            <div class="fila">
+                <div class="pelicula">
+                    <a href="ElExorcista.html">
+                        <img src="imagenes/el_exorcista.jpg" alt="El Exorcista">
+                        <h3>El Exorcista</h3>
+                    </a>
+                </div>
+                <div class="pelicula">
+                    <a href="Scream.html">
+                        <img src="imagenes/scream.jpg" alt="Scream">
+                        <h3>Scream</h3>
+                    </a>
+                </div>
+                <div class="pelicula">
+                    <a href="LaLlorona.html">
+                        <img src="imagenes/la_llorona.jpg" alt="La Llorona">
+                        <h3>La Llorona</h3>
+                    </a>
+                </div>
+                <div class="pelicula">
+                    <a href="TheRing.html">
+                        <img src="imagenes/the_ring.jpg" alt="The Ring">
+                        <h3>The Ring</h3>
+                    </a>
+                </div>
+                <div class="pelicula">
+                    <a href="Insidious.html">
+                        <img src="imagenes/insidious.jpg" alt="Insidious">
+                        <h3>Insidious</h3>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Fila 3 -->
+            <div class="fila">
+                <div class="pelicula">
+                    <a href="Midsommar.html">
+                        <img src="imagenes/midsommar.jpg" alt="Midsommar">
+                        <h3>Midsommar</h3>
+                    </a>
+                </div>
+                <div class="pelicula">
+                    <a href="Psycho.html">
+                        <img src="imagenes/psycho.jpg" alt="Psycho">
+                        <h3>Psycho</h3>
+                    </a>
+                </div>
+                <div class="pelicula">
+                    <a href="MujerDeLaCasaDeAlLado.html">
+                        <img src="imagenes/el_exorcismo_de_Dios.jpg" alt="Mujer De La Casa De Al Lado">
+                        <h3>El Exorcismo de Dios</h3>
+                    </a>
+                </div>
+                <div class="pelicula">
+                    <a href="TerrorEnSilencio.html">
+                        <img src="imagenes/terror_en_silencio.jpg" alt="Terror En Silencio">
+                        <h3>Terror En Silencio</h3>
+                    </a>
+                </div>
+                <div class="pelicula">
+                    <a href="MujerDeLaCasaDeAlLado.html">
+                        <img src="imagenes/mujer_de_la_casa_de_al_lado.jpg" alt="Mujer De La Casa De Al Lado">
+                        <h3>Mujer De La Casa De Al Lado</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Contenedor para el pie de página -->
+    <div class="footerContainer">
+        <p class="footerText">
+            Derechos reservados a sus autores. | <a href="terminos.html" target="_blank">Términos de uso</a> | <a href="privacidad.html" target="_blank">Política de privacidad</a>
+        </p>
+    </div>
+    
+    <!-- Estilos CSS para el pie de página -->
+    <style>
+        .footerContainer {
+            background-color: #1a1919; /* Fondo gris claro */
+            padding: 20px; /* Espaciado interior */
+            text-align: center; /* Centrar el texto */
+            border-top: 2px solid #ccc; /* Línea superior sutil */
+        }
+        .footerText {
+            font-size: 14px; /* Tamaño de fuente pequeño */
+            color: #fcfafa; /* Color gris oscuro */
+            margin: 0; /* Eliminar márgenes */
+        }
+        .footerText a {
+            color: #007bff; /* Color azul para los enlaces */
+            text-decoration: none; /* Eliminar subrayado */
+        }
+        .footerText a:hover {
+            text-decoration: underline; /* Subrayado al pasar el ratón */
+        }
+    </style>
+
+    
+</body>
+</html>

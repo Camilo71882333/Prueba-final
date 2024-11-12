@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Venom 3</title>
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ <!-- Marco superior -->
+ <header class="marco-superior">
+  <div class="logo">CuevanaPelis</div>
+  <nav>
+      <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li class="categorias">
+              Categorías
+              <ul class="submenu">
+                  <li><a href="terror.html">Terror</a></li>
+                  <li><a href="comedia.html">Comedias</a></li>
+                  <li><a href="accion.html">Acción</a></li>
+                  <li><a href="suspenso.html">Suspenso</a></li>
+                  <li><a href="animado.html">Animado</a></li>
+                  <li><a href="drama.html">Drama</a></li>
+              </ul>
+          </li>
+          <li><a href="lanzamientos.html">Próximos lanzamientos</a></li>
+      </ul>
+  </nav>
+  
+  
+  <div class="busqueda">
+      <input type="text" id="searchInput" placeholder="Escribe el nombre de la película...">
+      <button onclick="buscar()">Buscar</button>
+      <div id="resultados" class="dropdown-menu"></div>
+  </div>
+</header>
+  
+    <script src="buscar.js"></script>
+  </header>
+
+  <!-- Marco inferior -->
+  <main>
+    <div class="pelicula-container">
+      <div class="pelicula-imagen">
+        <img src="imagenes/Venom3.png" alt="Venom 3">
+      </div>
+      <div class="pelicula-sinopsis">
+        <h1>Venom 3</h1>
+        <p><strong>Sinopsis:</strong> Arthur Curry, ahora rey de Atlantis, debe enfrentarse a una amenaza que pone en riesgo tanto el océano como el mundo de la superficie. Cuando el oscuro poder del Tridente Negro amenaza con desatar el caos, Aquaman se embarca en una peligrosa aventura hacia el Reino Perdido. Junto a Mera y antiguos aliados, enfrentará secretos ancestrales y a un poderoso enemigo: Black Manta, quien regresa más fuerte y sediento de venganza. ¿Podrá Arthur proteger a su reino y evitar una catástrofe?</p>
+        <p><strong>Calificación:</strong> 8.5/10</p>
+      </div>
+    </div>
+
+    <!-- Contenedor de video -->
+    <div class="video-container">
+      <h2>Ver Película</h2>
+      <div class="video">
+        <!-- Video con imagen de previsualización (poster) antes de la carga -->
+        <video width="560" height="315" controls preload="auto" poster="imagenes/Venom3PosterVideo.png">
+          <source src="" type="video/mp4">
+          Tu navegador no soporta la reproducción de video.
+        </video>
+      </div>
+    </div>
+  </main>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>&copy; Derechos reservados a sus autores</p>
+  </footer>
+</body>
+</html>

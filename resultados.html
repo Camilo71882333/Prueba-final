@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados de Búsqueda</title>
+    <link rel="stylesheet" href="resultados.css">
+</head>
+<body>
+    <!-- Marco superior -->
+    <header class="marco-superior">
+        <div class="logo">CuevanaPelis</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li class="categorias">
+                    Categorías
+                    <ul class="submenu">
+                        <li><a href="terror.html">Terror</a></li>
+                        <li><a href="comedia.html">Comedias</a></li>
+                        <li><a href="accion.html">Acción</a></li>
+                        <li><a href="suspenso.html">Suspenso</a></li>
+                        <li><a href="animado.html">Animado</a></li>
+                        <li><a href="drama.html">Drama</a></li>
+                    </ul>
+                </li>
+                <li><a href="lanzamientos.html">Próximos lanzamientos</a></li>
+            </ul>
+        </nav>
+        <div class="busqueda">
+            <input type="text" id="searchInput" placeholder="Escribe el nombre de la película...">
+            <button onclick="buscar()">Buscar</button>
+            <div id="resultados" class="dropdown-menu"></div>
+        </div>
+    </header>
+
+    <!-- Resultados -->
+    <div id="resultadosBusqueda"></div>
+
+    <script src="buscar.js"></script>
+    <script>
+        window.onload = function() {
+            const resultados = JSON.parse(localStorage.getItem("resultadosBusqueda"));
+            const contenedorResultados = document.getElementById("resultadosBusqueda");
+            
+            if (resultados && resultados.length > 0) {
+                resultados.forEach(pelicula => {
+                    const divPelicula = document.createElement("div");
+                    divPelicula.classList.add("pelicula");
+
+                    const img = document.createElement("img");
+                    img.src = pelicula.src;
+                    divPelicula.appendChild(img);
+
+                    const nombre = document.createElement("p");
+                    nombre.textContent = pelicula.nombre;
+                    divPelicula.appendChild(nombre);
+
+                    contenedorResultados.appendChild(divPelicula);
+                });
+            } else {
+                contenedorResultados.innerHTML = "No se encontraron resultados";
+            }
+        };
+    </script>
+</body>
+</html>

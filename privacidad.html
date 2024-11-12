@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Política de Privacidad</title>
+  <style>
+    /* Estilos generales */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    /* Marco superior (cabecera) */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #333;
+      padding: 10px;
+      color: #fff;
+    }
+
+    header .logo {
+      font-size: 1.5em;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .categorias:hover .submenu {
+      display: block;
+    }
+
+    .submenu {
+      display: none;
+      position: absolute;
+      background-color: #444;
+      padding: 10px;
+      list-style: none;
+    }
+
+    .submenu li {
+      margin: 5px 0;
+    }
+
+    .busqueda {
+      display: flex;
+    }
+
+    .busqueda input {
+      padding: 5px;
+    }
+
+    /* Estilos para el contenido principal */
+    main {
+      padding: 20px;
+    }
+
+    .contenido-privacidad {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .contenido-privacidad h1 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .contenido-privacidad h2 {
+      font-size: 1.5em;
+      margin-top: 20px;
+      color: #444;
+    }
+
+    .contenido-privacidad p {
+      font-size: 1em;
+      line-height: 1.6;
+      margin-top: 10px;
+      color: #555;
+    }
+
+    /* Pie de página */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #333;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Marco superior -->
+<header class="marco-superior">
+    <div class="logo">CuevanaPelis</div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li class="categorias">
+                Categorías
+                <ul class="submenu">
+                    <li><a href="terror.html">Terror</a></li>
+                    <li><a href="comedia.html">Comedias</a></li>
+                    <li><a href="accion.html">Acción</a></li>
+                    <li><a href="suspenso.html">Suspenso</a></li>
+                    <li><a href="animado.html">Animado</a></li>
+                    <li><a href="drama.html">Drama</a></li>
+                </ul>
+            </li>
+            <li><a href="lanzamientos.html">Próximos lanzamientos</a></li>
+        </ul>
+    </nav>
+    
+    
+    <div class="busqueda">
+        <input type="text" id="searchInput" placeholder="Escribe el nombre de la película...">
+        <button onclick="buscar()">Buscar</button>
+        <div id="resultados" class="dropdown-menu"></div>
+    </div>
+  </header>
+    
+      <script src="buscar.js"></script>
+    </header>
+
+  <!-- Contenido principal -->
+  <main>
+    <div class="contenido-privacidad">
+      <h1>Política de Privacidad</h1>
+      <p><strong>Bienvenido a CuevanaPelis</strong></p>
+      <p>Tu privacidad es muy importante para nosotros. Esta Política de Privacidad explica qué información recopilamos y cómo la usamos.</p>
+
+      <h2>1. Información que Recopilamos</h2>
+      <p>Recopilamos información personal que proporcionas al registrarte en nuestro sitio web, como tu nombre, dirección de correo electrónico y preferencias de navegación.</p>
+
+      <h2>2. Uso de la Información</h2>
+      <p>Usamos la información para mejorar la experiencia del usuario, personalizar el contenido y enviarte notificaciones sobre actualizaciones o cambios en nuestro servicio.</p>
+
+      <h2>3. Protección de Datos</h2>
+      <p>Implementamos medidas de seguridad para proteger tu información personal. Sin embargo, no podemos garantizar la seguridad total en internet.</p>
+
+      <h2>4. Cookies</h2>
+      <p>Este sitio utiliza cookies para mejorar la experiencia del usuario. Al continuar utilizando nuestro sitio, aceptas el uso de cookies.</p>
+
+      <h2>5. Compartir Información</h2>
+      <p>No compartimos tu información personal con terceros, excepto cuando sea necesario para proporcionar el servicio o por requisitos legales.</p>
+
+      <h2>6. Enlaces a Sitios de Terceros</h2>
+      <p>Puedes encontrar enlaces a otros sitios en nuestra página. No nos responsabilizamos por las políticas de privacidad de esos sitios.</p>
+
+      <h2>7. Modificaciones a la Política</h2>
+      <p>Nos reservamos el derecho de modificar esta política en cualquier momento. Las modificaciones serán publicadas en esta página.</p>
+
+      <h2>8. Contacto</h2>
+      <p>Si tienes alguna pregunta sobre esta política de privacidad, por favor contáctanos a través de nuestra página de contacto.</p>
+    </div>
+  </main>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>&copy; Derechos reservados a CuevanaPelis</p>
+  </footer>
+
+</body>
+</html>

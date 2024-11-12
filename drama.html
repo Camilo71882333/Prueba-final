@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CuevanaPelis - Drama</title>
+    <link rel="stylesheet" href="categorias.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="imagenes/icono.png" type="image/png" sizes="32x32">
+</head>
+<body>
+
+ <!-- Marco superior -->
+ <header class="marco-superior">
+    <div class="logo">CuevanaPelis</div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li class="categorias">
+                Categorías
+                <ul class="submenu">
+                    <li><a href="terror.html">Terror</a></li>
+                    <li><a href="comedia.html">Comedias</a></li>
+                    <li><a href="accion.html">Acción</a></li>
+                    <li><a href="suspenso.html">Suspenso</a></li>
+                    <li><a href="animado.html">Animado</a></li>
+                    <li><a href="drama.html">Drama</a></li>
+                </ul>
+            </li>
+            <li><a href="lanzamientos.html">Próximos lanzamientos</a></li>
+        </ul>
+    </nav>
+    
+    <div class="busqueda">
+        <input type="text" id="searchInput" placeholder="Escribe el nombre de la película...">
+        <button onclick="buscar()">Buscar</button>
+        <div id="resultados" class="dropdown-menu"></div>
+    </div>
+    
+      <script src="buscar.js"></script>
+    </header>
+
+ <!-- Contenido de la categoría Drama -->
+ <main class="marco-inferior">
+    <div class="titulo">
+        <h2>Películas de Drama</h2>
+    </div>
+    <div class="peliculas-recientes">
+        <!-- Fila 1 -->
+        <div class="fila">
+            <div class="pelicula">
+                <a href="LaLaLand.html">
+                    <img src="imagenes/lalaland.jpg" alt="La La Land">
+                    <h3>La La Land</h3>
+                </a>
+            </div>
+            <div class="pelicula">
+                <a href="ElPiano.html">
+                    <img src="imagenes/el_piano.jpg" alt="El Piano">
+                    <h3>El Piano</h3>
+                </a>
+            </div>
+            <div class="pelicula">
+                <a href="ForrestGump.html">
+                    <img src="imagenes/forrestgump.jpg" alt="Forrest Gump">
+                    <h3>Forrest Gump</h3>
+                </a>
+            </div>
+            <div class="pelicula">
+                <a href="LaVidaEsBella.html">
+                    <img src="imagenes/lavidaesbella.jpg" alt="La Vida Es Bella">
+                    <h3>La Vida Es Bella</h3>
+                </a>
+            </div>
+            <div class="pelicula">
+                <a href="ElNiñoDelPijamaRayas.html">
+                    <img src="imagenes/ninopijama.jpg" alt="El Niño del Pijama a Rayas">
+                    <h3>El Niño del Pijama a Rayas</h3>
+                </a>
+            </div>
+        </div>
+
+        <!-- Fila 2 -->
+        <div class="fila">
+            <div class="pelicula">
+                <a href="LaCasaDeLasFlores.html">
+                    <img src="imagenes/casadelasflores.jpg" alt="La Casa de las Flores">
+                    <h3>La Casa de las Flores</h3>
+                </a>
+            </div>
+            <div class="pelicula">
+                <a href="UnMomentoEnElTiempo.html">
+                    <img src="imagenes/unmomento.jpg" alt="Un Momento en el Tiempo">
+                    <h3>Un Momento en el Tiempo</h3>
+                </a>
+            </div>
+            <div class="pelicula">
+                <a href="Coco.html">
+                    <img src="imagenes/coco.jpg" alt="Coco">
+                    <h3>Coco</h3>
+                </a>
+            </div>
+            <div class="pelicula">
+                <a href="UnAñoEnElCampo.html">
+                    <img src="imagenes/sueño de fuga.jpg" alt="Un Año en el Campo">
+                    <h3>El Sueño de Fuga</h3>
+                </a>
+            </div>
+            <div class="pelicula">
+                <a href="LaNocheDelAdios.html">
+                    <img src="imagenes/lanochedeladios.jpg" alt="La Noche del Adiós">
+                    <h3>La Noche del Adiós</h3>
+                </a>
+            </div>
+        </div>
+
+        <!-- Fila 3 -->
+        <div class="fila">
+            <div class="pelicula">
+                <a href="ElVientoSeLevanta.html">
+                    <img src="imagenes/elviento.jpg" alt="El Viento Se Levanta">
+                    <h3>El Viento Se Levanta</h3>
+                </a>
+            </div>
+            <div class="pelicula">
+                <a href="LasHoras.html">
+                    <img src="imagenes/lashoras.jpg" alt="Las Horas">
+                    <h3>Las Horas</h3>
+                </a>
+            </div>
+            <div class="pelicula">
+                <a href="BajoElSolDeLaToscana.html">
+                    <img src="imagenes/bajolosol.jpg" alt="Bajo el Sol de la Toscana">
+                    <h3>Bajo el Sol de la Toscana</h3>
+                </a>
+            </div>
+            <div class="pelicula">
+                <a href="BajoLaMismaEstrella.html">
+                    <img src="imagenes/bajolamismaestrella.jpg" alt="Bajo la Misma Estrella">
+                    <h3>Bajo la Misma Estrella</h3>
+                </a>
+            </div>
+            <div class="pelicula">
+                <a href="ElUltimoBeso.html">
+                    <img src="imagenes/ultimobeso.jpg" alt="El Último Beso">
+                    <h3>El Último Beso</h3>
+                </a>
+            </div>
+        </div>
+    </div>
+ </main>
+
+ <!-- Pie de página -->
+ <footer class="footerContainer">
+    <p class="footerText">
+        Derechos reservados a sus autores. | <a href="terminos.html" target="_blank">Términos de uso</a> | <a href="privacidad.html" target="_blank">Política de privacidad</a>
+    </p>
+ </footer>
+  <!-- Estilos CSS para el pie de página -->
+  <style>
+    .footerContainer {
+        background-color: #1a1919; /* Fondo gris claro */
+        padding: 20px; /* Espaciado interior */
+        text-align: center; /* Centrar el texto */
+        border-top: 2px solid #ccc; /* Línea superior sutil */
+    }
+    .footerText {
+        font-size: 14px; /* Tamaño de fuente pequeño */
+        color: #fcfafa; /* Color gris oscuro */
+        margin: 0; /* Eliminar márgenes */
+    }
+    .footerText a {
+        color: #007bff; /* Color azul para los enlaces */
+        text-decoration: none; /* Eliminar subrayado */
+    }
+    .footerText a:hover {
+        text-decoration: underline; /* Subrayado al pasar el ratón */
+    }
+</style>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+/* Estilo para la tabla de próximos lanzamientos */
+.proximos-lanzamientos {
+    margin: 20px;
+    padding: 20px;
+}
+
+.proximos-lanzamientos h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ccc;
+}
+
+th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+td a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+td a:hover {
+    text-decoration: underline;
+}

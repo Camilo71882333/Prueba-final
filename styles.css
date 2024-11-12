@@ -1,0 +1,172 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos para el marco superior (cabecera) */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: px 20px;
+}
+
+header .logo img {
+    width: 50px;
+}
+
+.logo {
+    font-size: 1.5em;
+    color: #fff;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.categorias:hover .submenu {
+    display: block;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    padding: 10px;
+    list-style: none;
+}
+
+.submenu li {
+    margin: 5px 0;
+}
+
+.busqueda {
+    display: flex;
+}
+
+.busqueda input {
+    padding: 5px;
+}
+
+/* Estilos para el contenido principal */
+.pelicula-container {
+    display: flex;
+    gap: 10px; /* Espacio reducido entre imagen y sinopsis */
+    margin: 20px;
+    align-items: flex-start;
+}
+
+.pelicula-imagen img {
+    width: 300px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.pelicula-sinopsis {
+    max-width: 400px;
+}
+
+.pelicula-sinopsis h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.pelicula-sinopsis p {
+    font-size: 1.1em;
+    margin-bottom: 8px;
+}
+
+.video-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.video {
+    margin-top: 10px;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+.categorias {
+    color: #fff; /* Color blanco para "Categoría" */
+}
+
+/* Estilo para el marco superior */
+.marco-superior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+  }
+  
+  /* Estilo para el campo de búsqueda */
+  .busqueda input {
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Estilo para el botón de búsqueda */
+  .busqueda button {
+    padding: 8px 15px;
+    background-color: #ff9900;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+.busqueda button:hover {
+    background-color: #ff7f00;
+  }
+  
+  /* Estilo para el menú flotante */
+#resultados {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 100;
+  }
+  
+.pelicula a {
+    display: block;
+    padding: 10px;
+    color: #333; /* Cambiar color de texto */
+    text-decoration: none; /* Eliminar subrayado */
+  }
+  
+.pelicula a:hover {
+    background-color: #f1f1f1;
+    color: #ff9900; /* Cambiar color al pasar el cursor */
+  }
+

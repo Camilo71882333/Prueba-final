@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acción - CuevanaPelis</title>
+    <link rel="stylesheet" href="categorias.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="imagenes/icono.png" type="image/png" sizes="32x32">
+</head>
+<body>
+    <!-- Marco superior -->
+    <header class="marco-superior">
+        <div class="logo">CuevanaPelis</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li class="categorias">
+                    Categorías
+                    <ul class="submenu">
+                        <li><a href="terror.html">Terror</a></li>
+                        <li><a href="comedia.html">Comedias</a></li>
+                        <li><a href="accion.html">Acción</a></li>
+                        <li><a href="suspenso.html">Suspenso</a></li>
+                        <li><a href="animado.html">Animado</a></li>
+                        <li><a href="drama.html">Drama</a></li>
+                    </ul>
+                </li>
+                <li><a href="lanzamientos.html">Próximos lanzamientos</a></li>
+            </ul>
+        </nav>
+        <div class="busqueda">
+            <input type="text" id="searchInput" placeholder="Escribe el nombre de la película...">
+            <button onclick="buscar()">Buscar</button>
+            <div id="resultados" class="dropdown-menu"></div>
+        </div>
+        
+          <script src="buscar.js"></script>
+        </header>
+
+    <main class="marco-inferior">
+        <div class="titulo">
+            <h2>Películas de Suspenso</h2>
+        </div>
+        <div class="peliculas-recientes">
+            <!-- Fila 1 -->
+            <div class="fila">
+                <div class="pelicula">
+                    <a href="ElPrestige.html">
+                        <img src="imagenes/elprestige.jpg" alt="El Prestige">
+                        <h3>El Prestige</h3>
+                    </a>
+                </div>
+                <div class="pelicula">
+                    <a href="ShutterIsland.html">
+                        <img src="imagenes/shutterisland.jpg" alt="Shutter Island">
+                        <h3>Shutter Island</h3>
+                    </a>
+                </div>
+                <div class="pelicula">
+                    <a href="GoneGirl.html">
+                        <img src="imagenes/gonegirl.jpg" alt="Gone Girl">
+                        <h3>Gone Girl</h3>
+                    </a>
+                </div>
+                <div class="pelicula">
+                    <a href="LaCaza.html">
+                        <img src="imagenes/lacaza.jpg" alt="La Caza">
+                        <h3>La Caza</h3>
+                    </a>
+                </div>
+                <div class="pelicula">
+                    <a href="TheSixthSense.html">
+                        <img src="imagenes/thesixthsense.jpg" alt="The Sixth Sense">
+                        <h3>The Sixth Sense</h3>
+                    </a>
+                </div>
+            </div>
+    
+            <!-- Fila 2 -->
+            <div class="fila">
+                <div class="pelicula">
+                    <a href="ElOrfanato.html">
+                        <img src="imagenes/elorfanato.jpg" alt="El Orfanato">
+                        <h3>El Orfanato</h3>
+                    </a>
+                </div>
+                <div class="pelicula">
+                    <a href="ElEspinazoDelDiablo.html">
+                        <img src="imagenes/elespinazodeldiablo.jpg" alt="El Espinazo del Diablo">
+                        <h3>El Espinazo del Diablo</h3>
+                    </a>
+                </div>
+                <div class="pelicula">
+                    <a href="LaAutopsiaDeJaneDoe.html">
+                        <img src="imagenes/laautopsiadejanedoe.jpg" alt="La Autopsia de Jane Doe">
+                        <h3>La Autopsia de Jane Doe</h3>
+                    </a>
+                </div>
+                <div class="pelicula">
+                    <a href="TheGift.html">
+                        <img src="imagenes/thegift.jpg" alt="The Gift">
+                        <h3>The Gift</h3>
+                    </a>
+                </div>
+                <div class="pelicula">
+                    <a href="ElRegreso.html">
+                        <img src="imagenes/elregreso.jpg" alt="El Regreso">
+                        <h3>El Regreso</h3>
+                    </a>
+                </div>
+            </div>
+    
+            <!-- Fila 3 -->
+            <div class="fila">
+                <div class="pelicula">
+                    <a href="Mother.html">
+                        <img src="imagenes/mother.jpg" alt="Mother!">
+                        <h3>Mother!</h3>
+                    </a>
+                </div>
+                <div class="pelicula">
+                    <a href="Veronica.html">
+                        <img src="imagenes/veronica.jpg" alt="Verónica">
+                        <h3>Verónica</h3>
+                    </a>
+                </div>
+                <div class="pelicula">
+                    <a href="ShutterIsland.html">
+                        <img src="imagenes/abigail.jpg" alt="Shutter Island">
+                        <h3>abigail</h3>
+                    </a>
+                </div>
+                <div class="pelicula">
+                    <a href="TheGift.html">
+                        <img src="imagenes/LaPisicina.jpg" alt="The Gift">
+                        <h3>La Piscina</h3>
+                    </a>
+                </div>
+                <div class="pelicula">
+                    <a href="GoneGirl.html">
+                        <img src="imagenes/ElSIlencio.jpg" alt="Gone Girl">
+                        <h3>Un Lugar en Silencio Dia Uno</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Contenedor para el pie de página -->
+    <div class="footerContainer">
+        <p class="footerText">
+            Derechos reservados a sus autores. | <a href="terminos.html" target="_blank">Términos de uso</a> | <a href="privacidad.html" target="_blank">Política de privacidad</a>
+        </p>
+    </div>
+    
+    <!-- Estilos CSS para el pie de página -->
+    <style>
+        .footerContainer {
+            background-color: #1a1919; /* Fondo gris claro */
+            padding: 20px; /* Espaciado interior */
+            text-align: center; /* Centrar el texto */
+            border-top: 2px solid #ccc; /* Línea superior sutil */
+        }
+        .footerText {
+            font-size: 14px; /* Tamaño de fuente pequeño */
+            color: #fcfafa; /* Color gris oscuro */
+            margin: 0; /* Eliminar márgenes */
+        }
+        .footerText a {
+            color: #007bff; /* Color azul para los enlaces */
+            text-decoration: none; /* Eliminar subrayado */
+        }
+        .footerText a:hover {
+            text-decoration: underline; /* Subrayado al pasar el ratón */
+        }
+    </style>
+
+    

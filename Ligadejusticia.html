@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La liga de la Justicia</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Asegúrate de tener el archivo CSS -->
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<!-- Marco superior -->
+<header class="marco-superior">
+  <div class="logo">CuevanaPelis</div>
+  <nav>
+      <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li class="categorias">
+              Categorías
+              <ul class="submenu">
+                  <li><a href="terror.html">Terror</a></li>
+                  <li><a href="comedia.html">Comedias</a></li>
+                  <li><a href="accion.html">Acción</a></li>
+                  <li><a href="suspenso.html">Suspenso</a></li>
+                  <li><a href="animado.html">Animado</a></li>
+                  <li><a href="drama.html">Drama</a></li>
+              </ul>
+          </li>
+          <li><a href="lanzamientos.html">Próximos lanzamientos</a></li>
+      </ul>
+  </nav>
+  
+  
+  <div class="busqueda">
+      <input type="text" id="searchInput" placeholder="Escribe el nombre de la película...">
+      <button onclick="buscar()">Buscar</button>
+      <div id="resultados" class="dropdown-menu"></div>
+  </div>
+</header>
+  
+    <script src="buscar.js"></script>
+  </header>
+  
+    <script src="buscar.js"></script>
+  </header>
+
+  <main>
+    <div class="pelicula-container">
+      <div class="pelicula-imagen">
+        <img src="imagenes/Liga de la justicia.png" alt="Venom 3">
+      </div>
+      <div class="pelicula-sinopsis">
+        <h1>La Liga de la Justicia</h1>
+        <p><strong>Sinopsis:</strong> La Liga de la Justicia reúne a los más grandes héroes del universo: Batman, Superman, Wonder Woman, Flash, Aquaman y Cyborg. Juntos, se enfrentarán a la amenaza de Steppenwolf y sus fuerzas invasoras que buscan conquistar la Tierra. Con el destino del planeta en juego, los héroes deben aprender a trabajar como un equipo para salvar al mundo de una destrucción total.
+
+        </p>
+        <p><strong>Calificación:</strong> 8.5/10</p>
+      </div>
+    </div>
+
+    <!-- Contenedor de video -->
+    <div class="video-container">
+      <h2>Ver Película</h2>
+      <div class="video">
+        <!-- Configuración para carga progresiva y reproducción mientras se carga -->
+        <video width="560" height="315" controls preload="auto" poster="imagenes/PosterLaLigaDeLaJusticaVideo.png">
+          <source src="Peliculas/Liga de la Justicia .mp4" type="video/mp4">
+          Tu navegador no soporta la reproducción de video.
+        </video>
+      </div>
+    </div>
+  </main>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>&copy; Derechos reservados a sus autores</p>
+  </footer>
+</body>
+</html>
